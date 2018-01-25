@@ -1,11 +1,12 @@
 {
-  "name": "zadanie-8-4",
+  "name": "zadanie-8-5",
   "version": "1.0.0",
-  "description": "https://annaperkowska.github.io/zadanie-8-4/.",
+  "description": "https://annaperkowska.github.io/zadanie-8-5/.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:html",
+    "test": "npm-run-all test:*",
     "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint js/",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
@@ -23,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/annaperkowska/zadanie-8-4.git"
+    "url": "git+https://github.com/annaperkowska/zadanie-8-5.git"
   },
   "keywords": [],
   "author": "",
@@ -36,10 +37,12 @@
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.23.5",
     "globstar": "^1.0.0",
+    "jshint": "^2.9.5",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
     "rimraf": "^2.6.2"
-  }
+  },
+  "dependencies": {}
 }
